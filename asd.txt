@@ -1,0 +1,38 @@
+<!-- Blog Content -->
+    <section class="blog py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Blog</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog/blog-1.jpg" alt="Katarakt Belirtileri" class="img-fluid rounded">
+                        <h4 class="blog-title mt-3">Katarakt Belirtileri ve Tedavisi</h4>
+                        <p>
+                            Kataraktın yaşam kalitesini nasıl etkilediğini ve tedavi yöntemlerini keşfedin.
+                        </p>
+                        <a href="#" class="btn btn-primary">Devamını Oku</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog/blog-2.jpg" alt="Lazer Tedavileri" class="img-fluid rounded">
+                        <h4 class="blog-title mt-3">Lazer Tedavileri Hakkında</h4>
+                        <p>
+                            Göz bozukluklarının lazer tedavisiyle nasıl düzeltilebileceğini öğrenin.
+                        </p>
+                        <a href="#" class="btn btn-primary">Devamını Oku</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="images/blog/blog-3.jpg" alt="Çocuk Göz Sağlığı" class="img-fluid rounded">
+                        <h4 class="blog-title mt-3">Çocuk Göz Sağlığı</h4>
+                        <p>
+                            Çocuklarda sık görülen göz problemleri ve tedavi yöntemleri hakkında bilgi alın.
+                        </p>
+                        <a href="#" class="btn btn-primary">Devamını Oku</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
