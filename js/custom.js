@@ -22,6 +22,35 @@
 
 (function($)  {
 	"use strict"; // Start of use strict
+
+	// GALLERY FILTER
+	$(document).ready(function () {
+		var $grid = $("#image-gallery-mix").isotope({
+			itemSelector: ".all",
+			masonry: {
+				columnWidth: ".all"
+			}
+		});
+
+		// Automatically trigger the "Hepsi" filter on page load
+		$('.gallery-filter li').removeClass('active'); // Remove active class from all filters
+		$('.gallery-filter li[data-filter="*"]').addClass('active'); // Add active class to "Hepsi"
+
+		$grid.isotope({ filter: "*" }); // Show all images initially
+
+		// Gallery filter click event
+		$('.gallery-filter li').click(function () {
+			$('.gallery-filter li').removeClass('active');
+			$(this).addClass('active');
+			var data = $(this).attr('data-filter');
+			$grid.isotope({
+				filter: data // Apply filter dynamically
+			});
+		});
+	});
+
+		
+	
 	
 	// PRELOADER
     $(window).on('load', function() {
@@ -117,20 +146,6 @@
 	  showCursor: true
 	});
 	
-	//GALLERY FILTER
-	$('.gallery-filter li').click(function(){
-	$('.gallery-filter li').removeClass('active');
-		$(this).addClass('active');	  
-		var data = $(this).attr('data-filter');
-		$grid.isotope({
-		filter: data
-		})
-	});	
-	var $grid = $("#image-gallery-mix").isotope({
-	  itemSelector: ".all",
-	  masonry: {
-		columnWidth: ".all"
-	  }
-	});
+	
 	
 })(jQuery);
