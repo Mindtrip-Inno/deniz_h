@@ -136,7 +136,7 @@
 	
 	// TYPES TEXT JS	
 	var typed = new Typed('.typed', {
-	  strings: ["Randevusu", "Tedavisi", "Nazarı"],
+	  strings: ["Randevusu", "Tedavisi"],
 	  typeSpeed: 80,
 	  startDelay: 1000,
 	  backSpeed: 80,
