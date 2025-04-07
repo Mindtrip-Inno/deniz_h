@@ -551,7 +551,7 @@ h4 {
     line-height: 1;
     color: #ffffff;
     letter-spacing: 0.15em;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     font-size: 44px;
 
 }
@@ -574,9 +574,8 @@ h4 {
 
 .about-pic {
     width: 700px;
-   
+    padding-right: 50px;
 }
-
 .about-pic img {
     width: 100%;
     border-radius: 8px;
@@ -1315,6 +1314,7 @@ h4 {
 .button-banner-uiverse {
     width: 100%;
     max-width: 280px;
+    margin-bottom: 140px;
 }
 
 /* Media queries to ensure map is responsive */
