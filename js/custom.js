@@ -102,9 +102,9 @@
 
 	//  BANNER CAROUSEL
 	$('.slider-inner').owlCarousel({
-		loop: true,
+		loop: false,
 		margin: 0,
-		autoplay: true,
+		autoplay: false,
 		dots: false,
 		nav: false,
 		autoplayTimeout: 4000,
