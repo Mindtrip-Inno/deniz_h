@@ -513,7 +513,7 @@ h4 {
 .slider::before {
     content: '';
     position: absolute;
-    width: 644px;
+    width: 688px;
     height: 100px;
     background: url(../images/home/bg.png);
     z-index: -1;
