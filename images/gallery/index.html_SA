@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="/_autoindex/assets/css/autoindex.css" /><script src="/_autoindex/assets/js/tablesort.js"></script><script src="/_autoindex/assets/js/tablesort.number.js"></script><title>Index of /moster/medical/images/gallery/</title><style>@media (prefers-color-scheme:dark){body{background-color:#000!important}}</style></head><body><div class="content"><h1 style="color: #555;">Index of /moster/medical/images/gallery/</h1>
+<div id="table-filter"><input type="text" name="keyword" id="filter-keyword" placeholder="Filter Name"></div>
+<div id="table-list"><table id="table-content"><thead class="t-header"><tr><th class="colname"><a class="name" href="?NA"  onclick="return false"">Name</a></th><th class="colname" data-sort-method="number"><a href="?MA"  onclick="return false"">Last Modified</a></th><th class="colname" data-sort-method="number" aria-sort="ascending"><a href="?SD"  onclick="return false"">Size</a></th></tr></thead>
+<tr data-sort-method="none"><td><a href="/moster/medical/images/"><img class="icon" src="/_autoindex/assets/icons/corner-left-up.svg" alt="Up">Parent Directory</a></td><td></td><td></td></tr>
+<tr><td data-sort="g2.jpg"><a href="/moster/medical/images/gallery/g2.jpg"><img class="icon" src="/_autoindex/assets/icons/image.svg" alt="[IMG]">g2.jpg</a></td><td data-sort="1599623786">2020-09-09 03:56</td><td data-sort="31329">     31k</td></tr>
+<tr><td data-sort="g1.jpg"><a href="/moster/medical/images/gallery/g1.jpg"><img class="icon" src="/_autoindex/assets/icons/image.svg" alt="[IMG]">g1.jpg</a></td><td data-sort="1599623878">2020-09-09 03:57</td><td data-sort="33439">     33k</td></tr>
+<tr><td data-sort="g4.jpg"><a href="/moster/medical/images/gallery/g4.jpg"><img class="icon" src="/_autoindex/assets/icons/image.svg" alt="[IMG]">g4.jpg</a></td><td data-sort="1599623836">2020-09-09 03:57</td><td data-sort="34569">     34k</td></tr>
+<tr><td data-sort="g3.jpg"><a href="/moster/medical/images/gallery/g3.jpg"><img class="icon" src="/_autoindex/assets/icons/image.svg" alt="[IMG]">g3.jpg</a></td><td data-sort="1599623774">2020-09-09 03:56</td><td data-sort="36833">     36k</td></tr>
+<tr><td data-sort="g6.jpg"><a href="/moster/medical/images/gallery/g6.jpg"><img class="icon" src="/_autoindex/assets/icons/image.svg" alt="[IMG]">g6.jpg</a></td><td data-sort="1599623808">2020-09-09 03:56</td><td data-sort="37378">     37k</td></tr>
+<tr><td data-sort="g5.jpg"><a href="/moster/medical/images/gallery/g5.jpg"><img class="icon" src="/_autoindex/assets/icons/image.svg" alt="[IMG]">g5.jpg</a></td><td data-sort="1599623740">2020-09-09 03:55</td><td data-sort="44379">     44k</td></tr>
+</table></div>
+<address>Proudly Served by LiteSpeed Web Server at epsilonitservice.com Port 80</address></div><script>
+	new Tablesort(document.getElementById("table-content"));
+	var keywordInput = document.getElementById('filter-keyword');
+	document.addEventListener('keyup', filterTable);
+
+	function filterTable(e) {
+		if (e.target.id != 'filter-keyword') return;
+
+		var cols = document.querySelectorAll('tbody td:first-child');
+		var keyword = keywordInput.value.toLowerCase();
+		for (i = 0; i < cols.length; i++) {
+			var text = cols[i].textContent.toLowerCase();
+			if (text != 'parent directory') {
+				cols[i].parentNode.style.display = text.indexOf(keyword) === -1 ? 'none' : 'table-row';
+			}
+		}
+	}
+</script></body></html>

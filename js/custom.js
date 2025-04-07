@@ -22,6 +22,24 @@
 
 (function($)  {
 	"use strict"; // Start of use strict
+
+	//GALLERY FILTER
+	$('.gallery-filter li').click(function(){
+		$('.gallery-filter li').removeClass('active');
+			$(this).addClass('active');	  
+			var data = $(this).attr('data-filter');
+			$grid.isotope({
+			filter: data
+			})
+		});	
+		var $grid = $("#image-gallery-mix").isotope({
+		  itemSelector: ".all",
+		  masonry: {
+			columnWidth: ".all"
+		  }
+		});
+
+	
 	
 	// PRELOADER
     $(window).on('load', function() {
@@ -117,20 +135,6 @@
 	  showCursor: true
 	});
 	
-	//GALLERY FILTER
-	$('.gallery-filter li').click(function(){
-	$('.gallery-filter li').removeClass('active');
-		$(this).addClass('active');	  
-		var data = $(this).attr('data-filter');
-		$grid.isotope({
-		filter: data
-		})
-	});	
-	var $grid = $("#image-gallery-mix").isotope({
-	  itemSelector: ".all",
-	  masonry: {
-		columnWidth: ".all"
-	  }
-	});
+	
 	
 })(jQuery);

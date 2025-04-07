@@ -1,0 +1,39 @@
+<center>
+    <section id="gallery" class="section blog bg-white" id="blog-first">
+      <div class="py-5" style="width: 80%;">
+        <div class="text-right common-title">
+          <h4>Anlaşmalı Olduğumuz Kurumlar</h4>
+        </div>
+        <div class="unique-card wow fadeInUp" data-wow-delay=".3s">
+
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-delay="0s">
+              <div class="blog-data mt-4">
+                <div class="blog-image">
+                  <img src="images/blog/sencard-logo-png_seeklogo-528305.png" class="transition img-fluid" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-delay="0s">
+              <div class="blog-data mt-4">
+                <div class="blog-image">
+                  <img src="images/blog/koc-allianz-logo-png_seeklogo-79348.png" class="transition img-fluid" alt="">
+                </div>
+
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-delay="0s">
+              <div class="blog-data mt-4">
+                <div class="blog-image">
+                  <img src="images/blog/acibadem-sigorta-logo-png_seeklogo-2689.png" class="transition img-fluid"
+                    alt="">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </center>
