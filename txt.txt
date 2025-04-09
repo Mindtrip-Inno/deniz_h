@@ -1,39 +1,256 @@
-<center>
-    <section id="gallery" class="section blog bg-white" id="blog-first">
-      <div class="py-5" style="width: 80%;">
-        <div class="text-right common-title">
-          <h4>Anlaşmalı Olduğumuz Kurumlar</h4>
+  <!-- BANNER-->
+  <section class="section banner">
+    <div class="container banner-container">
+      <div class="row banner-row">
+        <!-- Banner Content -->
+        <div class="col-lg-6 col-md-12 banner-content">
+          <div class="banner-detail">
+            <h3 class="wow fadeInLeft" data-wow-delay=".2s">
+              OPERATÖR DOKTOR <br> E. DENİZ EĞRİLMEZ <br><br>Göz Hastalıkları Uzmanı
+            </h3>
+
+            <button class="button-banner-uiverse bbui-resp learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">
+                <a target="_blank"
+                  href="https://api.whatsapp.com/send/?phone=%2B905523762222&text&type=phone_number&app_absent=0">
+                  İletişime Geçebilirsiniz
+                </a>
+              </span>
+            </button>
+          </div>
         </div>
-        <div class="unique-card wow fadeInUp" data-wow-delay=".3s">
 
-          <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-delay="0s">
-              <div class="blog-data mt-4">
-                <div class="blog-image">
-                  <img src="images/blog/sencard-logo-png_seeklogo-528305.png" class="transition img-fluid" alt="">
-                </div>
-
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-delay="0s">
-              <div class="blog-data mt-4">
-                <div class="blog-image">
-                  <img src="images/blog/koc-allianz-logo-png_seeklogo-79348.png" class="transition img-fluid" alt="">
-                </div>
-
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 wow bounceInUp" data-wow-delay="0s">
-              <div class="blog-data mt-4">
-                <div class="blog-image">
-                  <img src="images/blog/acibadem-sigorta-logo-png_seeklogo-2689.png" class="transition img-fluid"
-                    alt="">
-                </div>
-
+        <!-- Banner Image -->
+        <div class="col-lg-6 col-md-12 banner-image">
+          <div class="slider">
+            <div class="slider-inner">
+              <div class="slider-img">
+                <img src="ads.jpg" alt="Göz Doktoru" class="img-fluid">
               </div>
             </div>
           </div>
         </div>
+
       </div>
-    </section>
-  </center>
+    </div>
+  </section>
+  <!-- End Banner <div class="tel">
+        <a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> 0552 376 2222</a>
+      </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+.banner {
+    background-image: url("../images/home/main_bg.png");
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgb(43, 44, 72);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    width: 100%;
+    z-index: 98;
+    padding: 15px 0;
+    background: rgb(43, 44, 72);
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+.topbar h3 {
+    text-align: center;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    display: inline-block;
+}
+
+.topbar h3 a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.topbar span {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.topbar img.top-logo {
+    width: 34px;
+    margin-right: 6px;
+}
+
+.banner-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.banner-row {
+    width: 100%;
+    margin: 0;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 15px;
+}
+
+.banner-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    .slider {
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.slider-img {
+    width: 100%;
+    text-align: center;
+}
+
+.slider-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-detail h3 {
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    margin-bottom: 35px;
+    font-size: 2.5rem;
+}
+
+/* Button Styles */
+.button-banner-uiverse {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.button-banner-uiverse.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+.button-banner-uiverse.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+    border-radius: 1.625rem;
+}
+
+.button-banner-uiverse.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #000;
+}
+
+.button-banner-uiverse.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.button-banner-uiverse.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #000;
+    border-right: 0.125rem solid #000;
+    transform: rotate(45deg);
+}
+
+.button-banner-uiverse.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button-banner-uiverse.learn-more .button-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-banner-uiverse:hover .circle {
+    width: 100%;
+}
+
+.button-banner-uiverse:hover .circle .icon.arrow {
+    background: #000;
+    transform: translate(1rem, 0);
+}
+
+.button-banner-uiverse:hover .button-text {
+    color: #000;
+}
+
+.button-banner-uiverse:hover .button-text a {
+    color: #000;
+}
