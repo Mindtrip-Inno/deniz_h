@@ -814,7 +814,7 @@ h4 {
 }
 
 .about-pic {
-    width: 750px;
+    width: 100%;
 
 }
 
@@ -1904,9 +1904,8 @@ h4 {
     }
 
     .about-pic img {
-        width: 400px;
+        width: 100%;
         margin: auto;
-        margin-bottom: 30px;
     }
 
     h4 {
@@ -1988,7 +1987,7 @@ h4 {
 
     /* BLOGS PAGE RESPONSIVE */
     .card-white-uiverse {
-        width: 90% !important;
+        width: 98% !important;
     }
 
     /* BLOGS PAGE RESPONSIVE */
@@ -3666,6 +3665,23 @@ clip-path: polygon(0px 0px, 100% 0px, 100% 84%, 0px 100%);
     .navbar-collapse {
         display: none !important;
     }
+
+    .pt-00{
+        padding-top: 0 !important;
+    }
+
+    .tm-site-title{
+        font-size: 1.3rem;
+    }
+
+    .tm-site-subtitle{
+        font-size: .8rem;
+    }
+
+    .tm-bg-circle-white p{
+        font-size: .75rem !important;
+    }
+
 
     .common-title h4{
         font-size: 1.2rem;
