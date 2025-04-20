@@ -574,7 +574,6 @@ h4 {
     margin-right: 6px;
 }
 
-/* NEW BANNER */
 .hero-section {
     background-image: url("../images/home/main_bg.png");
     position: relative;
@@ -584,12 +583,13 @@ h4 {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    /* Taşmayı engeller */
 }
 
 .hero-wrapper {
     width: 100%;
-    margin: auto;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -598,21 +598,26 @@ h4 {
 .hero-content-side {
     width: 50%;
     padding: 3rem;
-    padding-left: 25rem;
+    padding-top: 7rem;
+    padding-left: clamp(5rem, 10vw, 25rem);
+    /* Hem büyük ekran hem responsive */
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 10;
+    box-sizing: border-box;
 }
 
 .hero-image-side {
     position: absolute;
-    top: -200px;
+    top: 0;
+    /* Eskiden -200px, sorun çıkarıyordu */
     right: 0;
     width: 56%;
-    height: 110vh;
+    height: 100vh;
     overflow: hidden;
     clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 5;
 }
 
 .hero-heading {
@@ -630,6 +635,7 @@ h4 {
     object-fit: cover;
     object-position: center;
 }
+
 
 /* New Button Style */
 .contact-button {
@@ -723,15 +729,16 @@ h4 {
 /* Responsive styles */
 @media (max-width: 1200px) {
 
-    .hero-section{
+    .hero-section {
         background: url('../images/bg-blue.png');
     }
 
     .hero-content-side {
         padding: 2rem;
+        padding-top: 1.5rem !important;
     }
 
-    .hero-image-side{
+    .hero-image-side {
         border-radius: 10px;
         top: 0;
     }
@@ -773,6 +780,7 @@ h4 {
         position: relative;
         width: 90%;
         margin: auto;
+        margin-bottom: 6vh;
         height: 50vh;
         clip-path: none;
         order: 1;
@@ -787,10 +795,7 @@ h4 {
 @media (max-width: 576px) {
     .hero-content-side {
         padding: 1.5rem;
-    }
-
-    .hero-image-side {
-        height: 40vh;
+        padding-bottom: 4rem;
     }
 
     .hero-heading {
@@ -890,7 +895,7 @@ h4 {
     ;
 }
 
-#about-main{
+#about-main {
     background: url('../images/bg-white_o.png');
     background-size: contain;
     background-repeat: repeat-y;
@@ -1172,11 +1177,11 @@ h4 {
     max-width: calc(33.333% - 20px);
 }
 
-.card-body{
+.card-body {
     background-color: #ececec;
 }
 
-.card-body.cb-white{
+.card-body.cb-white {
     background-color: #fff;
 }
 
@@ -1858,7 +1863,7 @@ h4 {
         top: 45px;
     }
 
-    #about-main{
+    #about-main {
         margin-top: 50px !important;
     }
 
@@ -2730,7 +2735,6 @@ clip-path: polygon(0px 0px, 100% 0px, 100% 84%, 0px 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: start;
     cursor: pointer;
     background-color: #f1f3f5;
     transition: background-color 0.3s ease;
@@ -3667,28 +3671,28 @@ clip-path: polygon(0px 0px, 100% 0px, 100% 84%, 0px 100%);
         display: none !important;
     }
 
-    .pt-00{
+    .pt-00 {
         padding-top: 0 !important;
     }
 
-    .tm-site-title{
+    .tm-site-title {
         font-size: 1.3rem;
     }
 
-    .tm-site-subtitle{
+    .tm-site-subtitle {
         font-size: .8rem;
     }
 
-    .tm-bg-circle-white p{
+    .tm-bg-circle-white p {
         font-size: .75rem !important;
     }
 
 
-    .common-title h4{
+    .common-title h4 {
         font-size: 1.2rem;
     }
 
-    .button-faq{
+    .button-faq {
         width: 15rem;
     }
 
