@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://denizegrilmez.com.tr/sitemap.xml
